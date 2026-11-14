@@ -6,11 +6,11 @@
   "background_color": "#08070d",
   "theme_color": "#08070d",
   "icons": [
-    {
-      "src": "./icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
+  {
+    "src": "./icon.png",
+    "sizes": "1024x1024",
+    "type": "image/png",
+    "purpose": "any"
+  }
+]
 }
