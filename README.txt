@@ -1,4 +1,4 @@
-# Lynpedia Wi-Fi Tools — offline phone app
+# xyro tools Wi-Fi Tools — offline phone app
 
 ## Install
 1. Upload the contents of this folder to a static website that uses HTTPS (for example, GitHub Pages).
