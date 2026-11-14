@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#090d16">
+    <meta name="theme-color" content="#08070d">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Lynpedia Tools">
+    <meta name="apple-mobile-web-app-title" content="Xyro Tools">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.svg">
-    <title>Hack Wifi</title>
+    <title>Xyro Tools</title>
     <style>
         :root {
             --glass-bg: rgba(255, 255, 255, 0.07);
@@ -18,9 +18,9 @@
             --glass-card: rgba(15, 23, 42, 0.4);
             --text-main: #ffffff;
             --text-sub: rgba(255, 255, 255, 0.65);
-            --accent: #6366f1;
-            --accent-glow: rgba(99, 102, 241, 0.4);
-            --success: #34d399;
+            --accent: #a855f7;
+            --accent-glow: rgba(168, 85, 247, 0.38);
+            --success: #c4a5ff;
         }
 
         * {
@@ -35,7 +35,7 @@
             justify-content: center;
             align-items: center;
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #090d16;
+            background: #08070d;
             color: var(--text-main);
             position: relative;
             overflow-x: hidden;
@@ -55,7 +55,7 @@
         .bg-orb-1 {
             width: 380px;
             height: 380px;
-            background: #4f46e5;
+            background: #6d28d9;
             top: -100px;
             left: -80px;
             opacity: 0.5;
@@ -64,7 +64,7 @@
         .bg-orb-2 {
             width: 420px;
             height: 420px;
-            background: #c026d3;
+            background: #9333ea;
             bottom: -120px;
             right: -100px;
             opacity: 0.45;
@@ -73,7 +73,7 @@
         .bg-orb-3 {
             width: 280px;
             height: 280px;
-            background: #06b6d4;
+            background: #7c3aed;
             top: 40%;
             left: 60%;
             transform: translate(-50%, -50%);
@@ -110,9 +110,9 @@ pointer-events: auto;
             display: inline-block;
             padding: 4px 12px;
             border-radius: 20px;
-            background: rgba(99, 102, 241, 0.15);
-            border: 1px solid rgba(99, 102, 241, 0.3);
-            color: #a5b4fc;
+            background: rgba(168, 85, 247, 0.12);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            color: #d8b4fe;
             font-size: 11px;
             font-weight: 600;
             letter-spacing: 0.08em;
@@ -124,7 +124,7 @@ pointer-events: auto;
             font-size: 26px;
             font-weight: 800;
             letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+            background: linear-gradient(135deg, #ffffff 25%, #c4a5ff 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 8px;
@@ -198,13 +198,13 @@ pointer-events: auto;
             padding: 15px;
             border: none;
             border-radius: 14px;
-            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            background: linear-gradient(135deg, #a855f7 0%, #6d28d9 100%);
             color: #fff;
             font-size: 15px;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+            box-shadow: 0 8px 20px rgba(124, 58, 237, 0.30);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -213,7 +213,7 @@ pointer-events: auto;
 
         button.submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 24px rgba(79, 70, 229, 0.45);
+            box-shadow: 0 12px 24px rgba(124, 58, 237, 0.42);
         }
 
         button.submit-btn:active {
@@ -315,6 +315,30 @@ input[type="text"] {
     -webkit-user-select: text;
     user-select: text;
 }
+
+        .creator-credit {
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: rgba(255,255,255,.48);
+            font-size: 11px;
+            letter-spacing: .04em;
+        }
+        .creator-credit a {
+            color: #d8b4fe;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color .2s ease;
+        }
+        .creator-credit a:hover { color: #fff; }
+        .heart { color: #c084fc; }
+        .instagram-mark { font-size: 12px; }
+        @media (max-width: 480px) {
+            .container { padding: 28px 22px; border-radius: 24px; }
+            h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
@@ -325,9 +349,9 @@ input[type="text"] {
 
     <div class="container">
         <div class="header">
-            <span class="badge">Lynpedia Tools</span>
-            <h1>Get Wifi Password</h1>
-            <p class="subtitle">Khusus nama wifi yang berawalan <code>fh_</code></p>
+            <span class="badge">XYRO TOOLS</span>
+            <h1>WiFi Key Tool</h1>
+            <p class="subtitle">A clean, simple tool for supported <code>fh_</code> network IDs.</p>
         </div>
         
         <form id="ssid-form">
@@ -359,6 +383,12 @@ input[type="text"] {
                 <li>Password default = <code>wlan</code> + hasil invert hex.</li>
             </ol>
         </div>
+
+        <footer class="creator-credit">
+            <span>Made with <span class="heart" aria-label="love">♥</span> by</span>
+            <a href="https://www.instagram.com/xyro.agencyy/" target="_blank" rel="noopener noreferrer"
+               aria-label="Visit Navii on Instagram">Navii <span class="instagram-mark">↗</span></a>
+        </footer>
     </div>
 
     <script>
