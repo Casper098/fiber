@@ -356,7 +356,7 @@ input[type="text"] {
         
         <form id="ssid-form">
             <div class="form-group">
-                <label for="ssid">Kode SSID (6 Digit Hex)</label>
+                <label for="ssid">SSID Code (6-Digit Hex)</label>
                 <div class="input-wrapper">
                     <span class="input-prefix">fh_</span>
                     <input type="text" id="ssid" placeholder="xxxxxx" maxlength="6" required autocomplete="off">
@@ -376,11 +376,11 @@ input[type="text"] {
         </div>
 
         <div class="explanation">
-            <strong>Cara Kerja Algoritma:</strong>
+            <strong>how algorithm works:</strong>
             <ol>
-                <li>Input otomatis mengabaikan prefix <code>fh_</code> dan suffix <code>_5G</code>.</li>
-                <li>Invert tiap digit hex (<code>hasil = 15 - n</code>).</li>
-                <li>Password default = <code>wlan</code> + hasil invert hex.</li>
+                <li>Automatically ignores the fh_ prefix and _5G suffix. <code>fh_</code> dan suffix <code>_5G</code>.</li>
+                <li>Inverts each hexadecimal digit (result = 15 - n). (<code>hasil = 15 - n</code>).</li>
+                <li>Password default = <code>wlan</code> + result invert hex.</li>
             </ol>
         </div>
 
